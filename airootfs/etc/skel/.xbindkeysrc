@@ -1,0 +1,274 @@
+###########################
+# xbindkeys configuration #
+###########################
+#
+# Version: 0.1.3
+#
+# If you edit this, do not forget to uncomment any lines that you change.
+# The pound(#) symbol may be used anywhere for comments.
+#
+# A list of keys is in /usr/include/X11/keysym.h and in
+# /usr/include/X11/keysymdef.h 
+# The XK_ is not needed. 
+#
+# List of modifier (on my keyboard): 
+#   Control, Shift, Mod1 (Alt), Mod2 (NumLock), 
+#   Mod3 (CapsLock), Mod4, Mod5 (Scroll). 
+#
+# Another way to specifie a key is to use 'xev' and set the 
+# keycode with c:nnn or the modifier with m:nnn where nnn is 
+# the keycode or the state returned by xev 
+#
+# This file is created by xbindkey_config 
+# The structure is : 
+# # Remark 
+# "command" 
+# m:xxx + c:xxx 
+# Shift+... 
+
+
+
+
+#keystate_numlock = enable
+#keystate_scrolllock = enable
+#keystate_capslock = enable
+
+
+
+#androidStudio
+"android-studio"
+    m:0x5 + c:38
+    Control+Shift + a 
+
+#angrysearch
+"angrysearch"
+    m:0x41 + c:38
+    Shift+Mod4 + a 
+
+#anydo
+"/usr/bin/chromium --profile-directory=Default --app-id=ocgddccilgpeepgglnlpchkpgamkgmld"
+    m:0x5 + c:40
+    Control+Shift + d 
+
+#arandr
+"arandr"
+    m:0x5 + c:74
+    Control+Shift + F8 
+
+#atom
+"atom"
+    m:0x9 + c:38
+    Shift+Alt + a 
+
+#audacity
+"audacity"
+    m:0xc + c:38
+    Control+Alt + a 
+
+#battery
+"notify-send "$(upower -i /org/freedesktop/UPower/devices/battery_BAT1| grep -E "state|to\ full|percentage")""
+    m:0x5 + c:56
+    Control+Shift + b 
+
+#brightness
+"xterm -e sudo vim /sys/class/backlight/intel_backlight/brightness"
+    m:0x0 + c:232
+    XF86MonBrightnessDown 
+
+#brightness-Copy
+"xterm -e sudo vim /sys/class/backlight/intel_backlight/brightness"
+    m:0x0 + c:233
+    XF86MonBrightnessUp 
+
+#chromium
+"chromium"
+    m:0x5 + c:54
+    Control+Shift + c 
+
+#cmus
+"xterm -e cmus"
+    m:0x5 + c:58
+    Control+Shift + m 
+
+#cmus-play
+"~/.config/cmus/cmus-notify2.sh -u"
+    m:0xc + c:116
+    Control+Alt + Down 
+
+#cmus-next
+"~/.config/cmus/cmus-notify2.sh -n"
+    m:0xc + c:113
+    Control+Alt + Left 
+
+#create_ap
+"xterm -e sudo create_ap wlp3s0 wlp3s0 test qwertyuiop"
+    m:0xc + c:54
+    Control+Alt + c 
+
+#evince
+"evince"
+    m:0x5 + c:26
+    Control+Shift + e 
+
+#filezilla
+"filezilla"
+    m:0xc + c:41
+    Control+Alt + f 
+
+#franz
+"franz-bin"
+    m:0x5 + c:41
+    Control+Shift + f 
+
+#galculator
+"galculator"
+    m:0x5 + c:53
+    Control+Shift + x 
+
+#genymotion
+"genymotion"
+    m:0x41 + c:42
+    Shift+Mod4 + g 
+
+#gimp
+"gimp"
+    m:0xc + c:42
+    Control+Alt + g 
+
+#gkamus
+"gkamus"
+    m:0x5 + c:42
+    Control+Shift + g 
+
+#htop
+"xterm -e htop"
+    m:0x5 + c:9
+    Control+Shift + Escape 
+
+#inkscape
+"inkscape"
+    m:0x5 + c:31
+    Control+Shift + i 
+
+#ip
+"xterm -e sudo nmap -sP 192.168.1.0/24"
+    m:0xc + c:31
+    Control+Alt + i 
+
+#libreoffice
+"libreoffice"
+    m:0x5 + c:46
+    Control+Shift + l 
+
+#leafpad
+"leafpad"
+    m:0xc + c:46
+    Control+Alt + l 
+
+#line
+"/usr/bin/chromium --profile-directory=Default --app-id=menkifleemblimdogmoihpfopnplikde"
+    m:0xd + c:46
+    Control+Shift+Alt + l 
+
+#lmms
+"lmms"
+    m:0x45 + c:46
+    Control+Shift+Mod4 + l 
+
+#mysqlWorkbench
+"mysql-workbench"
+    m:0xc + c:58
+    Control+Alt + m 
+
+#netbeans
+"netbeans"
+    m:0xc + c:57
+    Control+Alt + n 
+
+#nmApplet
+"nm-applet"
+    m:0x0 + c:255
+    NoSymbol 
+
+#pavucontrol
+"pavucontrol"
+    m:0xc + c:33
+    Control+Alt + p 
+
+#ping
+"xterm -e ping google.com"
+    m:0x5 + c:33
+    Control+Shift + p 
+
+#res
+"~/./res.sh"
+    m:0x41 + c:27
+    Shift+Mod4 + r 
+
+#terminix
+"terminix"
+    m:0xc + c:28
+    Control+Alt + t 
+
+#thunar
+"thunar"
+    m:0x5 + c:28
+    Control+Shift + t 
+
+#simpleScreenRecorder
+"simplescreenrecorder"
+    m:0x5 + c:39
+    Control+Shift + s 
+
+#soundWireServer
+"xterm -e ~/SoundWireServer/SoundWireServer"
+    m:0xc + c:39
+    Control+Alt + s 
+
+#virtualbox
+"virtualbox"
+    m:0xc + c:55
+    Control+Alt + v 
+
+#vlc
+"vlc"
+    m:0x5 + c:55
+    Control+Shift + v 
+
+#volume
+"xterm -e alsamixer"
+    m:0x0 + c:122
+    XF86AudioLowerVolume 
+
+#volume-Copy
+"xterm -e alsamixer"
+    m:0x0 + c:123
+    XF86AudioRaiseVolume 
+
+#winff
+"winff"
+    m:0xc + c:25
+    Control+Alt + w 
+
+#wireframesketcher
+"wireframesketcher"
+    m:0x5 + c:25
+    Control+Shift + w 
+
+#xbindkeysConfig
+"xbindkeys_config"
+    m:0xc + c:36
+    Control+Alt + Return 
+
+#xfce4screenshooter
+"xfce4-screenshooter"
+    m:0x0 + c:107
+    Print 
+
+#yed
+"yed"
+    m:0x5 + c:29
+    Control+Shift + y 
+
+#
+# End of xbindkeys configuration
