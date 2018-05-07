@@ -11,3 +11,7 @@ Zigma OS is remaster from arch linux. It focus on how to control desktop with on
 - xbindkeys
 
 # Awesome WM
+
+# How to contribute
+Read the book here
+[remaster arch](https://asamsulfat.github.io/nyamuk-book/remasterArch/setup.html)
